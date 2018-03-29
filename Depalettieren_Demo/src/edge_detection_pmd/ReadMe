@@ -1,0 +1,22 @@
+READ ME
+
+cd ~/catkin_ws
+source devel/setup.bash
+roslaunch royale_in_ros camera_driver.launch
+
+Open second terminal
+cd ~/catkin_ws/src/edge_detection_pmd/scripts
+
+Execute python script
+./edges.py
+
+
+TODO
+Publishing Edges
+refine Edge Detection, Parameters?, image preprocessing
+
+LITERATURE
+	Depth edge detection by image-based smoothing and morphological operations
+		Syed MohammadAbid HasanKwangheeKo
+	An Approach to Improvise Canny Edge Detection using Morphological Filters 
+		Venugopala P S
