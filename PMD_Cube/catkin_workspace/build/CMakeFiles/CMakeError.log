@@ -1,0 +1,149 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1149151049/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1149151049.dir/build.make CMakeFiles/cmTryCompileExec1149151049.dir/build
+make[1]: Verzeichnis »/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp« wird betreten
+/usr/bin/cmake -E cmake_progress_report /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1149151049.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1149151049.dir/CheckSymbolExists.c.o   -c /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1149151049
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1149151049.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1149151049.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1149151049 -rdynamic 
+CMakeFiles/cmTryCompileExec1149151049.dir/CheckSymbolExists.c.o: In Funktion `main':
+CheckSymbolExists.c:(.text+0x16): Nicht definierter Verweis auf `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Verzeichnis »/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp« wird verlassen
+make[1]: *** [cmTryCompileExec1149151049] Fehler 1
+make: *** [cmTryCompileExec1149151049/fast] Fehler 2
+
+File /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec101943494/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec101943494.dir/build.make CMakeFiles/cmTryCompileExec101943494.dir/build
+make[1]: Verzeichnis »/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp« wird betreten
+/usr/bin/cmake -E cmake_progress_report /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec101943494.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec101943494.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec101943494
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec101943494.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec101943494.dir/CheckFunctionExists.c.o  -o cmTryCompileExec101943494 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec101943494] Fehler 1
+make[1]: Verzeichnis »/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp« wird verlassen
+make: *** [cmTryCompileExec101943494/fast] Fehler 2
+
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2301436816/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2301436816.dir/build.make CMakeFiles/cmTryCompileExec2301436816.dir/build
+make[1]: Verzeichnis »/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp« wird betreten
+/usr/bin/cmake -E cmake_progress_report /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2301436816.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -fPIC -std=c++0x -Wall -Wconversion  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec2301436816.dir/CheckSymbolExists.cxx.o -c /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+make[1]: *** [CMakeFiles/cmTryCompileExec2301436816.dir/CheckSymbolExists.cxx.o] Fehler 1
+make[1]: Verzeichnis »/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp« wird verlassen
+make: *** [cmTryCompileExec2301436816/fast] Fehler 2
+
+File /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1624215823/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1624215823.dir/build.make CMakeFiles/cmTryCompileExec1624215823.dir/build
+make[1]: Verzeichnis »/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp« wird betreten
+/usr/bin/cmake -E cmake_progress_report /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1624215823.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -fPIC -std=c++0x -Wall -Wconversion  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1624215823.dir/CheckSymbolExists.cxx.o -c /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+make[1]: *** [CMakeFiles/cmTryCompileExec1624215823.dir/CheckSymbolExists.cxx.o] Fehler 1
+make[1]: Verzeichnis »/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp« wird verlassen
+make: *** [cmTryCompileExec1624215823/fast] Fehler 2
+
+File /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1790938475/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1790938475.dir/build.make CMakeFiles/cmTryCompileExec1790938475.dir/build
+make[1]: Verzeichnis »/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp« wird betreten
+/usr/bin/cmake -E cmake_progress_report /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1790938475.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -fPIC -std=c++0x -Wall -Wconversion  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1790938475.dir/CheckSymbolExists.cxx.o -c /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+make[1]: *** [CMakeFiles/cmTryCompileExec1790938475.dir/CheckSymbolExists.cxx.o] Fehler 1
+make[1]: Verzeichnis »/home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp« wird verlassen
+make: *** [cmTryCompileExec1790938475/fast] Fehler 2
+
+File /home/mobmonrob/catkin_workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

@@ -1,0 +1,2 @@
+sampleROS
+-DCATKIN_DEVEL_PREFIX=/home/mobmonrob/catkin_works/devel -DCMAKE_INSTALL_PREFIX=/home/mobmonrob/catkin_works/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/mobmonrob/ws_moveit/install
+
+Name: ur_driver
+Description: Description of ur_driver
+Version: 1.2.1
+Cflags: -I/home/mobmonrob/ws_moveit/install/include
+Libs: -L/home/mobmonrob/ws_moveit/install/lib 
+Requires: dynamic_reconfigure
