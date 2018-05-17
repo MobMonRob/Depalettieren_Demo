@@ -1,11 +1,27 @@
+Installation of pmd sdk
+Download full SW package (https://pmdtec.com/picofamily/software/) Password Sh!2CBpf
+
+extract
+libroyale-3.16.0.51-LINUX-arm-64Bit
+
+create new folder 'Royale' in home directory
+paste extracted folder to new folder 'Royale'
+
+install udev rules provided by SDK
+cd Royale
+sudo cp libroyale-3.16.0.51-LINUX-arm-64Bit/driver/udev/10-royale-ubuntu.rules /etc/udev/rules.d/
+
+
+
 READ ME
 
-cd ~/catkin_ws
+cd ~/workspace
 source devel/setup.bash
 roslaunch royale_in_ros camera_driver.launch
 
 Open second terminal
 cd ~/catkin_ws/src/edge_detection_pmd/scripts
+cd ~/workspace/src/Depalettieren_Demo/Depalettieren_Demo/src/edge_detection_pmd/scripts
 
 Execute python script
 ./edges.py
