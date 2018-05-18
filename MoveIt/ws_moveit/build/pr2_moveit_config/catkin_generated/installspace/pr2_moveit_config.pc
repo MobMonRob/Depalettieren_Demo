@@ -1,8 +1,0 @@
-prefix=/home/mobmonrob/ws_moveit/install
-
-Name: pr2_moveit_config
-Description: Description of pr2_moveit_config
-Version: 0.3.0
-Cflags: 
-Libs: -L/home/mobmonrob/ws_moveit/install/lib 
-Requires: 

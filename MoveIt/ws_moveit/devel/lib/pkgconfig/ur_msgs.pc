@@ -1,8 +1,0 @@
-prefix=/home/mobmonrob/ws_moveit/devel
-
-Name: ur_msgs
-Description: Description of ur_msgs
-Version: 1.2.1
-Cflags: -I/home/mobmonrob/ws_moveit/devel/include
-Libs: -L/home/mobmonrob/ws_moveit/devel/lib 
-Requires: message_runtime std_msgs
