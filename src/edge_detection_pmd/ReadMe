@@ -12,9 +12,6 @@ cd Royale
 sudo cp libroyale-3.16.0.51-LINUX-arm-64Bit/driver/udev/10-royale-ubuntu.rules /etc/udev/rules.d/
 
 
-
-READ ME
-
 cd ~/workspace
 source devel/setup.bash
 roslaunch royale_in_ros camera_driver.launch
@@ -28,7 +25,10 @@ Execute python script
 
 
 TODO
-Publishing Edges
+Mittellinie, Mittelpunkt der Kontour bestimmen, Koordinatensystem mit Ursprung und Achsen ableiten
+Publishing Koordinatensystem?
+Konfiguration einer Action, die bei Aufruf das Koordinatensystem des "Greif-Punkts" bestimmt 
+
 refine Edge Detection, Parameters?, image preprocessing
 
 LITERATURE
